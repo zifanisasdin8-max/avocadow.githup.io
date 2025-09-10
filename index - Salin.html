@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About Me - Dante!</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  /* Import Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap');
+
+  body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefcf6;
+    color: #3a2f1c;
+    padding: 2rem;
+  }
+  /* Border styles for images */
+  .border-dashed-dotted {
+    border-width: 2px;
+    border-style: dashed dotted;
+    border-color: #6a5e45;
+  }
+  .border-dashed {
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #6a5e45;
+  }
+  /* Underlines and decoration */
+  .underline-ornate {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #ab7a4b;
+  }
+  .title-bold {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #4a3c19;
+  }
+  /* Link styling */
+  a.custom-link {
+    color: #317a32;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a.custom-link:hover {
+    text-decoration: underline;
+    color: #4fbc4f;
+  }
+  /* Divider line */
+  hr.custom-divider {
+    border: none;
+    border-top: 3px dotted #9b8756;
+    margin: 2rem 0;
+  }
+
+  /* Boxes */
+  .box-bordered {
+    border: 2px solid #a28755;
+    padding: 0.6rem 1rem;
+    margin: 0.6rem 0;
+    background-color: #f7f4ea;
+    border-radius: 8px;
+  }
+  .box-light-border {
+    border: 1px solid #ac9b6b99;
+    padding: 0.8rem 1rem;
+    margin-top: 1rem;
+    background-color: #fefbf1;
+    border-radius: 6px;
+  }
+  .box-note {
+    font-size: 0.875rem;
+    color: #594a30;
+  }
+  .small-caps {
+    font-variant: small-caps;
+  }
+  mark.custom-mark {
+    background-color: #d3c699cc;
+    padding: 0.1rem 0.3rem;
+    border-radius: 0.15rem;
+    font-style: normal;
+    font-weight: 600;
+  }
+  .list-decimal-custom {
+    list-style: decimal outside;
+    padding-left: 1.5rem;
+  }
+
+  /* Scroll horizontal container for friends */
+  .friends-list {
+    white-space: nowrap;
+    overflow-x: auto;
+    padding: 0.5rem 0;
+  }
+  .friend-item {
+    display: inline-block;
+    border: 1px solid #a28755;
+    padding: 0.2rem 0.6rem;
+    margin-right: 0.35rem;
+    font-size: 0.875rem;
+    background: #f7f4ea;
+    border-radius: 4px;
+  }
+  
+  /* Image container with fallback for broken images */
+  .img-container img {
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  /* Icon placeholders */
+  .icon-wrapper {
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.6rem;
+    border: 1.8px solid #8a7a53;
+    border-radius: 6px;
+    background-color: #f7f4ea;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+  }
+  .icon-wrapper:hover {
+    background-color: #e0d9bb;
+  }
+
+  /* Audio player styling */
+  .audio-player {
+    max-width: 300px;
+    margin: 1.5rem auto 2rem auto;
+    display: flex;
+    justify-content: center;
+  }
+  audio {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(74, 60, 25, 0.3);
+    outline: none;
+  }
+
+  /* Symbol decorations */
+  .decor-symbol {
+    font-size: 1.2em;
+    color: #bfa75a;
+    user-select: none;
+    margin: 0 0.15em;
+  }
+  .decor-symbol-small {
+    font-size: 1em;
+    color: #bfa75a;
+    user-select: none;
+    margin: 0 0.1em;
+  }
+  .footer-symbols {
+    text-align: center;
+    color: #bfa75a;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.15em;
+    user-select: none;
+  }
+</style>
+</head>
+<body>
+<div class="max-w-full px-4 sm:max-w-3xl mx-auto">
+
+  <!-- Top Section: Image + Links + Title + Info + Loves / Gross + Small Image -->
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
+    <!-- Left Image and links -->
+    <div>
+      <div class="border-dashed-dotted rounded-md overflow-hidden mb-3 img-container" style="max-width:250px;">
+        <img src="images/foto1.jpg" 
+             alt="Portrait of a young androgynous person with dark hair, wearing a black cap and layered glasses, styled in alternative fashion" 
+             onerror="this.style.display='none'" 
+             class="w-full h-auto" />
+      </div>
+      <div class="grid grid-cols-2 gap-2 text-center text-sm font-semibold text-gray-700 max-w-xs mx-auto">
+        <a href="https://x.com/Shylateew" target="_blank" rel="noopener noreferrer" class="custom-link box-bordered">x</a>
+        <a href="https://open.spotify.com/user/312wh3qjhickgiywvtl4b36kofuu?si=a13160b51f7e4580https://open.spotify.com/playlist/4Ov1yR2x1QcLE2wRFuIOrX?si=xyVVk6BfTA6wdt76vPH15w&fbclid=PAZXh0bgNhZW0CMTEAAafz-DTczrhrV41YavQXMXdshYQuLDsPUk-Yrjhi9vFtrGaoKqQxzQaB16aMdg_aem_OKlHO0NZ6LqugJ211L5vtA&nd=1&dlsi=64b2d1f64b0b45b7" target="_blank" rel="noopener noreferrer" class="custom-link box-bordered">spotify</a>
+        <a href="https://www.tiktok.com/@paajipiii?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="custom-link box-bordered">tiktok</a>
+        <a href="https://www.instagram.com/zyvnsa_/" target="_blank" rel="noopener noreferrer" class="custom-link box-bordered">instagram</a>
+      </div>
+    </div>
+
+    <!-- Center block: Title and info -->
+    <div class="text-center px-3">
+      <div class="flex justify-center items-center space-x-2 text-lg mb-1">
+        <span class="decor-symbol">⋆</span>
+        <span class="decor-symbol">𐙚</span>
+        <span class="text-2xl font-semibold title-bold tracking-wide">9★</span>
+        <span class="decor-symbol">₊</span>
+        <span class="decor-symbol">˚</span>
+        <span class="decor-symbol">⊹</span>
+        <span class="decor-symbol">♡</span>
+      </div>
+      <h1 class="title-bold text-4xl mb-1">
+        <span class="decor-symbol-small">⋆</span>DANTE!<span class="decor-symbol-small">⋆</span>
+      </h1>
+      <p class="mb-4 italic font-medium" style="line-height: 1.3;">
+        <span class="decor-symbol-small">𐙚</span>zifa or jipii <strong>she/pers </strong> <mark class="custom-mark">sixteen </mark>blue intj <span class="decor-symbol-small">₊˚⊹♡</span><br />
+        ★ AVOCADOSTAN ★
+      </p>
+      <div class="border-dashed border-2 max-w-xs mx-auto py-2 px-3 text-sm text-gray-600 font-semibold" style="letter-spacing:0.06em;">
+        I'm just a girl lost in every fandom
+      </div>
+    </div>
+
+    <!-- Right side: Loves/Gross + small image -->
+    <div class="space-y-6">
+      <div class="box-bordered text-sm max-w-xs mx-auto">
+        <strong>LOVES</strong> <span class="decor-symbol-small">⋆𐙚₊˚⊹♡</span> my family, sukuna, friends, music, japanese, <a href="#" class="custom-link font-semibold">green</a>, mangas, anime, series
+      </div>
+      <div class="box-bordered mt-4 text-sm max-w-xs mx-auto">
+        <strong>GROSS</strong> durian, yellow, sensory issues, toxic fans/stans eww <span class="decor-symbol-small">𐙚⊹</span>
+      </div>
+      <div class="border-dashed-dotted rounded-md overflow-hidden mt-4 max-w-xs mx-auto img-container">
+        <img src="images/foto2.jpg" 
+             alt="Close-up image of a contemplative young person in a hat and layered outfit, holding their hand near their mouth, expressing a somber emotion in a muted tone photo" 
+             onerror="this.style.display='none'" 
+             class="w-full h-auto" />
+      </div>
+    </div>
+  </div>
+
+  <hr class="custom-divider" />
+
+  <!-- Audio Player -->
+  <div class="audio-player" title="Background music for Dante's page">
+    <audio controls loop preload="auto">
+      <source src="sound/Drink.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <!-- Middle Section: Icons + Friends list -->
+  <div class="flex flex-wrap items-center gap-4 mt-3 mb-1">
+    <div class="icon-wrapper" title="Booke">
+      <img src="images/booke.jpeg" alt="Small leather-bound closed book icon with intricate stitching and worn edges" />
+    </div>
+    <div class="icon-wrapper" title="Sukuna aww">
+      <img src="images/sukuna.jpeg" alt="Small brown leather dress shoes with laces, polished and classic style" />
+    </div>
+    <div class="icon-wrapper" title="Cinnamon roll">
+      <img src="images/macaron.jpeg" alt="Small cinnamon roll pastry icon with visible icing swirl" />
+    </div>
+  </div>
+  <div class="box-bordered max-w-xl mb-6">
+    <strong>ZODIAK!?</strong><br />
+   <mark class="custom-mark">TAURUS</mark> is the true queen of the Zodiac—smart, ambitious, and unmatched in every way. No one can rival their greatness as friends, colleagues, or partners. Honesty? That's a given, because only great people like Taurus can maintain drama-free and luxurious relationships. In short, if you want the best, you need a Taurus by your side.<3
+  </div>
+
+  <!-- Before Interact / Do Not Interact Section -->
+  <div class="relative rounded-lg mb-8 p-5 bg-gradient-to-r from-brown-300 via-brown-100 to-brown-300 border border-brown-700 bg-opacity-90" style="background-color:#573f29;background-image:repeating-linear-gradient(45deg,#573f29 0, #654b33 10px, #573f29 20px), linear-gradient(to right, #d2b48c33, #b39c6a33);">
+    <div class="text-white font-bold text-lg mb-3 tracking-wide drop-shadow-sm">BEFORE U INTERACT</div>
+    <ol class="list-decimal-custom text-sm font-semibold text-white leading-relaxed max-w-lg">
+      <li>im a <mark class="custom-mark">minor</mark> so dont be weird</li>
+      <li>i talk about my interests a lot</li>
+      <li>i cuss</li>
+      <li>i make nsfw jokes</li>
+	  <li> <mark class="custom-mark">BL</mark> stan talk</li>
+      <li>i can reclaim the f slur <span class="text-red-600 font-extrabold">!!</span></li>
+    </ol>
+
+    <div class="mt-5 border-t border-white border-opacity-40 pt-4">
+      <div class="text-white font-bold text-lg tracking-wide drop-shadow-sm mb-2">DO NOT INTERACT</div>
+      <ol class="list-decimal-custom text-sm font-semibold text-white leading-relaxed max-w-lg">
+        <li>fit the basic dni criteria</li>
+        <li>toxic stans</li>
+        <li>pro israel (zionist <span class="text-red-600 font-extrabold">!!</span>)</li>
+        <li>if you take the internet seriously dni</li>
+      </ol>
+    </div>
+
+    <div class="box-light-border text-sm mt-5 text-gray-800 max-w-lg">
+      <strong>NOTE !!</strong> i dont have any triggers but i dont like pictures of dislocated body parts or needles. <em>also</em> i dont use tone tags often but ask me and ill to use them
+    </div>
+  </div>
+
+  <!-- Love Zone Section -->
+  <div class="mb-6">
+    <h2 class="text-2xl font-bold mb-2 tracking-widest flex items-center space-x-1">
+      <span class="decor-symbol-small">⋆</span>
+      <span>L</span>
+      <span class="px-1 font-semibold text-yellow-700">★</span>
+      <span>VE Z</span>
+      <span class="px-1 font-semibold text-yellow-700">★</span>
+      <span>NE !?</span>
+      <span class="decor-symbol-small">𐙚₊˚⊹♡</span>
+    </h2>
+    <p class="text-sm mb-3">
+      <mark class="custom-mark">Series . . .</mark> Perfect 10 Liners, Secret Lovers, ABO Desire, Star in My Mind, Our Skyy, Hidden Agenda, THK, Reset, The Untamed, Top Form, Revenged Love, The World Between Us, Move to Heaven, Star Wars, True Beauty, Mori no Kuma-san <mark class="custom-mark">dll</mark>(<a href="#" class="custom-link underline">From</a> China, Thai, Taiwanese, and Korea)
+    </p>
+    <p class="text-sm mb-3">
+      <mark class="custom-mark">Artist n Band . . .</mark> Jeff Satur, Enhypen, SKZ, LYKN, Destroy Boys, JAS.PER, Billie Eilish, Judika, Prakteek Kuhad, Taylor Swift, Hindia, ATARASHI GAKKO!, Joong Archen, LDR, BTS, EXO, Black Pink, Joji, Ruth B., One Direction, Bruno Mars, Yung Kai, Arctic Monkeys, Eminem, Girl In Red, GEMINI, Ari Abdul, Isabel Larosa, Nadin Amizah <mark class="custom-mark">dll</mark>(<a href="#" class="custom-link underline">From</a> Thai, Japan, Indo, English, Prancis, Portugal, Korea)
+    </p>
+    <p class="text-sm mb-3">
+      <mark class="custom-mark">Anime . . .</mark> One Piece, HAIKYUU!!, KNY, YBC, SPY X FAMILY, Naruto, Jujutsu Kaisen, Mignon, Dakaichi, Chery Magic, Love All Play, WAFE!!, Tsurune, Yatara Yarashi Fukami, Black Clover, Wind Breaker<mark class="custom-mark">dll</mark>(<a href="#" class="custom-link underline">From</a> Japan n Korea)
+    </p>
+	 <p class="text-sm mb-3">
+      <mark class="custom-mark">Manga . . .</mark> Jinx, Bad Life, Wind Breaker, WEE!!, Serena, Operation True Love, Codename Anastasia, Thinking In Reverse, Old In Age, Lilith, Ballboys Tactics, Scammed And Rammed, Iseop's Romance, Killer Peter, The Guy Upstairs, Beauty in a Click, True Beauty <mark class="custom-mark">dll</mark>(<a href="#" class="custom-link underline">From</a> Korea, Japan)
+    </p>
+	 <p class="text-sm mb-3">
+      <mark class="custom-mark">Yummy . . .</mark> Seblak, Mie Ayam, Avocado, Baso Aci, Macaroni, Ice Cream, Coffe, Salad, Dimsum, TEMPE, Grape, Manggo and <mark class="custom-mark">ALL</mark>
+    </p>
+  </div>
+
+  <!-- Kinlist Section -->
+  <div class="box-bordered max-w-xl mb-8">
+    <strong>HOBBIES!? <span class="decor-symbol-small">⋆𐙚₊˚⊹♡</span></strong>
+    <p class="mt-2 text-sm leading-relaxed">
+      Cooking, <u>Make fun auu, </u> <u>AVOCADO YESS SIR, </u> <u>Listening to music, </u> Watching windah basudara
+    </p>
+  </div>
+
+  <!-- Small chocolates images horizontal -->
+  <div class="flex gap-4 mb-8 justify-center flex-wrap sm:flex-nowrap">
+    <div class="icon-wrapper" title="Tatapony">
+      <img src="images/tatapon.jpeg" alt="Piece of chocolate bar icon, with bite marks and dark brown color" />
+    </div>
+    <div class="icon-wrapper" title="Cadoow">
+      <img src="images/cado.jpeg" alt="Chocolate truffles or small round chocolate candies grouped" />
+    </div>
+    <div class="icon-wrapper" title="Joongy">
+      <img src="images/junk.jpeg" alt="Chocolate coated ice cream bar on a wooden stick" />
+    </div>
+  </div>
+
+  <!-- Bottom big image -->
+  <div class="border-dashed-dotted rounded-md overflow-hidden max-w-full mx-auto" style="max-width: 100%;">
+    <img src="images/foto3.jpg" 
+         alt="Full body portrait of a young androgynous person outdoors in industrial setting, wearing layered clothes and multiple silver chains, soft focus" 
+         onerror="this.style.display='none'" 
+         class="w-full h-auto" />
+  </div>
+
+  <!-- Footer credits -->
+  <p class="mt-6 text-center text-gray-400 font-serif text-sm italic">( don't kill yourself )</p>
+  <p class="footer-symbols" aria-hidden="true">⋆ 𐙚 ₊ ˚ ⊹ ♡ ⋆ 𐙚 ₊ ˚ ⊹ ♡ ⋆
